@@ -22,7 +22,7 @@ enum NetworkError : Error
 
 class NetworkService : NetworkServiceProtocol
 {
-    private let apiKey = "&appid=4e693f18f44bdbbcf213c986ba56a376"
+    private let apiKey = ""
     private let baseURL = "http://api.openweathermap.org/data/2.5/"
     
     func get<T:Decodable>(from endPoint: String, completion: @escaping(T?, NetworkError?)->Void)
